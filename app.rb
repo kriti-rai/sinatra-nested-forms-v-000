@@ -4,7 +4,7 @@ module FormsLab
   class App < Sinatra::Base
 
     get "/" do
-      "/views/pirates/index.erb"
+      "Welcome"
     end
 
     get "/new" do
