@@ -3,11 +3,11 @@ require './environment'
 module FormsLab
   class App < Sinatra::Base
 
-    get "/" do
+    get "/new" do
       erb :new
     end
 
-    post "/pirate" do
+    post "/pirates" do
       @pirate = Pirate.new(params[:pirate])
       params[:pirate][:ships].each do |details|
         Ship.new(details)
