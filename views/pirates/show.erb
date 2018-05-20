@@ -4,11 +4,10 @@
     Height: <%= @pirate.height %>
 </h1>
 
-<h2>
   <% @ships.each do |ship| %>
 
-      <p>Name: <%=ship.name %></p>
-      <p>Type: <%=ship.type %></p>
-      <p>Booty: <%=ship.booty %></p>
+      <h2>Name:</h2> <%=ship.name %></h2>
+      <h2>Type: <%=ship.type %></h2>
+      <h2>Booty: <%=ship.booty %></p>
   <% end %>
-</h2>
+
